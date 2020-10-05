@@ -1,6 +1,6 @@
 var scores, roundScore, activePlayer, gamePlaying;
 
-function init() {
+const init = () => {
    scores = [0,0];
    roundScore = 0;
    activePlayer = 0;
@@ -60,7 +60,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
 });
 
 
-function nextPlayer() {
+const nextPlayer = () => {
         activePlayer === 0 ? activePlayer = 1 : activePlayer = 0; 
         roundScore =0;
         
